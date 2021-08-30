@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Nombres, notas y tablas</title>
+  </head>
+  <body class="bg-gray-600">
+    <div class="bg-white flex p-6 shadow-sm">
+      <h6 class="flex-grow text-4xl font-mono font-bold">Desarrollo WEB</h6>
+      <p class="text-2xl font-mono font-black">Marcelo Lopez</p>
+    </div>
+    <br />
+    <div
+      class=" bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-center font-mono md:container md:mx-auto" id="contenedor_1">
+    </div>
+    <br/>
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-center md:container md:mx-auto font-mono" id="contenedor_2">
+    </div>
+    <br />
+    <div class="contenido bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 md:container md:mx-auto font-mono">
+        <form id="numeros" action="#">
+            <div class="form-group">
+                <label for="numero">Numero:</label>
+                <input type="text" autocomplete="off" class="form-control" id="numero" placeholder="Agrega un numero..">
+            </div>
+            <button class="bg-gray-500 hover:bg-gray-700  font-bold text-white rounded-full py-2 px-4">
+                <a href="#" type="button"  onclick="operar()"><p class="color">Calcular</p></a>    
+            </button>
+            
+        </form>
+
+        <div class="col">
+            <div class="contenido secundario">
+
+                <h2 class="text-center">Tabla de Multiplicar</h2>
+                <div class="text-center" id="multiplicar">
+                    <ul class="list-group "></ul>
+                </div>
+                <br>
+                <h2 class="text-center">Tabla de Dividir</h2>
+                <div class="text-center" id="dividir">
+                    <ul class="list-group"></ul>
+                </div>
+                <br>
+                <h2 class="text-center">Tabla de sumar</h2>
+                <div class="text-center" id="sumar">
+                    <ul class="list-group"></ul>
+                </div>
+                <br>
+                <h2 class="text-center">Tabla de Restar</h2>
+                <div class="text-center" id="restar">
+                    <ul class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="jv.js"></script>
+  </body>
+</html>
